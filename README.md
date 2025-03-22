@@ -15,7 +15,7 @@ Este código foi desenvolvido para facilitar a criação e personalização de g
 1. **Instalar os pacotes necessários:** Caso não tiver alguns dos pacotes que estão sendo abertos, instale-os antes de utilizar o código.
 2. **Alterar o diretório de trabalho (linha: 22):** O diretório de trabalho deve ser alterado para a pasta onde os seus arquivos .dbc estão localizados.
 3. **Ler com atenção o comentário na `linha 52`:** Observar que os nomes `-->` `'percentual', 'nome1', 'nome2', 'legenda', 'coluna1' e 'capitulo'`, estão apenas como **exemplos**. 
-4. **Observar com atenção as linhas que estão com os nomes de exemplo:** As linhas `-->` `62`, `67`, `74`, `75`, `104`, `105`, `123` e `137`.
+4. **Observar com atenção as linhas que estão com os nomes de exemplo:** As linhas `-->` `62`, `67`, `74`, `75`, `104`, `105`, `123` e `137`, tem nomes que precisam ser alterados de acordo com os dados.
 
 <br>
 <br>
