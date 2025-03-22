@@ -19,8 +19,8 @@ rm (list = ls ())
 gc ()
 
 # Seleciona o diretório de trabalho
-setwd ("C:/caminho/para/sua/pasta/com/a/serie/temporal")
-getwd ()
+setwd ("C:/caminho/para/sua/pasta/com/a/serie/temporal")  # <-- Altere para o caminho em que deseja
+getwd ()                                                  #     trabalhar
 
 # Verifica todos os arquivos com extensão ".csv"
 arquivos <- list.files (path = ".", pattern = "\\.csv$", full.names = TRUE,
@@ -49,8 +49,8 @@ colnames (serie_temporal)[colnames (serie_temporal) == "NA"] <- "Outros"
 
 #--------------------------- Criação dos Gráficos ------------------------------
 
-# NOMES QUE ESTÃO APENAS COMO EXEMPLO --> 'serie_temporal, 'nome1', 'nome2', 'legenda'
-#                                         'coluna1'
+# NOMES QUE ESTÃO APENAS COMO EXEMPLO --> 'percentual', 'nome1', 'nome2', 'legenda'
+#                                         'coluna1' e 'capitulo'
 
 # Definindo uma paleta personalizada a partir de uma paleta existente
 cores <- colorRampPalette(brewer.pal(12, "Paired"))(23)
@@ -134,7 +134,7 @@ grafico_linha <- serie_temporal %>%
          axis.title.y = element_blank()) + 
   
   # Exibe o percentual em cima de cada ponto de marcação
-  geom_text(aes(label = scales::percent (PERCENTUAL / 100, accuracy = 0.1)), vjust = -0.5)
+  geom_text(aes(label = scales::percent (percentual / 100, accuracy = 0.1)), vjust = -0.5)
 
 print (grafico_linha)
 
